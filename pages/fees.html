@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Fee Calculator - Adventure Escape SA</title>
+    <link rel="stylesheet" href="../assets/stylesheets/style.css">
 </head>
 <body>
     <header>
-        <img src="../assets/images/logo.png" alt="Adventure Escape SA Logo" width="40">
-        <strong>ADVENTURE ESCAPE SA</strong>
+        <div>
+            <img src="../assets/images/logo.png" alt="Adventure Escape SA Logo" width="40">
+            <strong>ADVENTURE ESCAPE SA</strong>
+        </div>
         <nav>
             <a href="../index.html">HOME</a> |
             <a href="about.html">ABOUT US</a> |
@@ -18,52 +21,64 @@
     </header>
     <p><small>Home &gt; Fee Calculator</small></p>
     <h1>Fee Calculator</h1>
-    <form>
-        <label for="activity">Select Activity:</label>
-        <select id="activity" name="activity">
-            <option value="">-- Select Activity --</option>
-            <option value="ziplining">Ziplining Adventure (R750)</option>
-            <option value="rock-climbing">Rock Climbing Session (R750)</option>
-            <option value="ultimate">Ultimate Adventure Day (R1500)</option>
-        </select>
-        <br><br>
-        <label>Number of participants:</label><br>
-        <label for="adults">ADULTS:</label>
-        <input type="number" id="adults" name="adults" min="0" value="0"><br>
+    <div class="form-layout">
+        <form>
+            <label for="activity">Select Activity:</label>
+            <select id="activity" name="activity">
+                <option value="">-- Select Activity --</option>
+                <option value="ziplining">Ziplining Adventure - R750 per adult, R375 per child</option>
+                <option value="rockclimbing">Rock Climbing Session - R750 per adult, R375 per child</option>
+                <option value="mountain">Mountain Adventure Package - R1500 per adult, R750 per child</option>
+                <option value="family-explorer">Family Explorer Package - R1500 per adult, R750 per child</option>
+                <option value="kayaking">Kayaking Experience - R750 per adult, R375 per child</option>
+                <option value="corporate">Corporate Team Challenge - R1500 per adult, R1500 per child</option>
+                <option value="ultimate">Ultimate Adventure Day - R1500 per adult, R1500 per child</option>
+            </select>
+            <br><br>
 
-        <label for="children">CHILDREN:</label>
-        <input type="number" id="children" name="children" min="0" value="0">
-        <br><br>
+            <label>Number of participants:</label><br>
+            <label for="adults">ADULTS:</label>
+            <input type="number" id="adults" name="adults" min="0" value="0"><br>
 
-        <label for="date">Preferred Date:</label>
-        <input type="date" id="date" name="date">
-        <br><br>
+            <label for="children">CHILDREN:</label>
+            <input type="number" id="children" name="children" min="0" value="0">
+            <br><br>
 
-        <label for="time">Time Slot:</label>
-        <input type="time" id="time" name="time">
-        <br><br>
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date">
+            <br><br>
 
-        <label>Add ons:</label><br>
-        <input type="checkbox" id="equipment" name="addons" value="250">
-        <label for="equipment">Equipment Rental (R250)</label><br>
+            <label for="time">Time Slot:</label>
+            <input type="time" id="time" name="time">
+            <br><br>
 
-        <input type="checkbox" id="meal" name="addons" value="150">
-        <label for="meal">Meal / Lunch Pack (R150)</label><br>
+            <label>Add ons:</label><br>
+            <input type="checkbox" id="equipment" name="addons" value="250">
+            <label for="equipment">Equipment Rental (R250)</label><br>
 
-        <input type="checkbox" id="gopro" name="addons" value="800">
-        <label for="gopro">GoPro Photo & Video Package (R800)</label>
-        <br><br>
-        <fieldset>
-            <legend>Estimated Cost Breakdown</legend>
-            <p>Activity (Adults x2): R3,000</p>
-            <p>Activity (Children x1): R750</p>
-            <p>Equipment Rental: R250</p>
-            <hr>
-            <strong>Total Estimated Fee: R4,000</strong>
-        </fieldset>
-        <br>
-        <button type="submit">Submit Booking request</button>
-        <button type="button">Save Quote</button>
-    </form>
+            <input type="checkbox" id="meal" name="addons" value="150">
+            <label for="meal">Meal / Lunch Pack (R150)</label><br>
+
+            <input type="checkbox" id="gopro" name="addons" value="800">
+            <label for="gopro">GoPro Photo & Video Package (R800)</label>
+            <br><br>
+
+            <button type="submit">Submit Booking request</button>
+            <button type="button">Save Quote</button>
+        </form>
+        <div class="form-right">
+            <div id="breakdownResult">
+                <fieldset>
+                    <legend>Estimated Cost Breakdown</legend>
+                    <p>Activity (Adults x2): R3,000</p>
+                    <p>Activity (Children x1): R750</p>
+                    <p>Equipment Rental: R250</p>
+                    <hr>
+                    <strong>Total Estimated Fee: R4,000</strong>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/javascript/script.js"></script>
 </body>
 </html>

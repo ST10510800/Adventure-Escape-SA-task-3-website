@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Contact Us - Adventure Escape SA</title>
+    <link rel="stylesheet" href="../assets/stylesheets/style.css">
 </head>
 <body>
     <header>
-        <img src="../assets/images/logo.png" alt="Adventure Escape SA Logo" width="40">
-        <strong>ADVENTURE ESCAPE SA</strong>
+        <div>
+            <img src="../assets/images/logo.png" alt="Adventure Escape SA Logo" width="40">
+            <strong>ADVENTURE ESCAPE SA</strong>
+        </div>
         <nav>
             <a href="../index.html">HOME</a> |
             <a href="about.html">ABOUT US</a> |
@@ -18,8 +21,8 @@
     </header>
     <p><small>Home &gt; Contact Us</small></p>
     <h1>CONTACT US</h1>
-    <section>
-        <form>
+    <div class="form-layout">
+        <form id="contactForm">
             <label for="fullname">Full Name:</label>
             <input type="text" id="fullname" name="fullname" placeholder="Enter your name"><br><br>
 
@@ -33,19 +36,20 @@
             <input type="text" id="group" name="group" placeholder="Family / school / corporate / individual"><br><br>
 
             <label for="message">Message/inquiry:</label><br>
-            <textarea id="message" name="message" rows="5" cols="40" placeholder="Tell us about your group or booking quote..."></textarea><br><br>
-
+            <textarea id="message" name="message" rows="5" placeholder="Tell us about your group or booking quote..."></textarea>
+            
             <button type="submit">Send Message</button>
         </form>
-    </section>
-    <section>
-        <h3>Map/Location:</h3>
-        <img src="../assets/images/map-placeholder.png" alt="Map Location" width="300">
+        <div class="form-right">
+            <h3>Map/Location:</h3>
+            <img src="../assets/images/map-placeholder.jpg" alt="Map Location" width="100%" style="border-radius: 4px; margin-bottom: 20px;">
 
-        <h3>Our Contact Details:</h3>
-        <p><strong>Phone/WhatsApp:</strong> +27 21 234 5678</p>
-        <p><strong>Email:</strong> info@adventureescapesa.co.za</p>
-        <p><strong>Address:</strong> 12 Coastal Highway, Cape Town, Western Cape, South Africa</p>
-    </section>
+            <h3>Our Contact Details:</h3>
+            <p><strong>Phone/WhatsApp:</strong> +27 21 234 5678</p>
+            <p><strong>Email:</strong> info@adventureescapesa.co.za</p>
+            <p><strong>Address:</strong> 12 Coastal Highway, Cape Town, Western Cape, South Africa</p>
+        </div>
+    </div>
+    <script src="../assets/javascript/script.js"></script>
 </body>
 </html>

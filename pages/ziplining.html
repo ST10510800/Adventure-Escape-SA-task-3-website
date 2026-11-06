@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Ziplining Adventure - Adventure Escape SA</title>
+    <link rel="stylesheet" href="../assets/stylesheets/style.css">
 </head>
 <body>
     <header>
-        <img src="../assets/images/logo.png" alt="Adventure Escape SA Logo" width="40">
-        <strong>ADVENTURE ESCAPE SA</strong>
+        <div>
+            <img src="../assets/images/logo.png" alt="Adventure Escape SA Logo" width="40">
+            <strong>ADVENTURE ESCAPE SA</strong>
+        </div>
         <nav>
             <a href="../index.html">HOME</a> |
             <a href="about.html">ABOUT US</a> |
@@ -18,27 +21,32 @@
     </header>
     <p><small>Home &gt; Activities &gt; Ziplining Adventure</small></p>
     <h1>ABOUT THIS ACTIVITY</h1>
-    <section>
-        <img src="../assets/images/ziplining-large.jpg" alt="Ziplining Main" width="400">
-        <img src="../assets/images/ziplining-thumb1.jpg" alt="Ziplining Action 1" width="200">
-        <img src="../assets/images/ziplining-thumb2.jpg" alt="Ziplining Action 2" width="200">
-    </section>
-    <section>
-        <h2>Ziplining Adventure</h2>
-        <p>⏱ 2-3 hours</p>
-        <p>👶 Min age: 11+</p>
-        <p>📊 Moderate</p>
-        <h3>INCLUDES:</h3>
-        <ul>
-            <li>Safety Briefing</li>
-            <li>Equipment hires</li>
-            <li>Professional Instructors</li>
-        </ul>
-        <h3>DETAILS:</h3>
-        <p>Experience breathtaking views while zip lining through the forest.</p>
-        <p><small>★ 4.8 (120 reviews)</small></p>
-        <p>Starting from R750</p>
-        <a href="fees.html"><button>BOOK NOW</button></a>
-    </section>
+    <div class="flex-container">
+        <div>
+            <img src="../assets/images/ziplining-large.jpg" alt="Ziplining Adventure">
+            <h2>Ziplining Adventure</h2>
+            <p>⏱️ 2 Hours</p>
+            <p>👶 Min age: 8+</p>
+            <p>📊 Moderate</p>
+            <p><strong>Starting from R750</strong></p>
+            <a href="fees.html"><button class="btn">BOOK NOW</button></a>
+        </div>
+        <div>
+            <div>
+                <img src="../assets/images/ziplining-thumb1.jpg" alt="Ziplining view 1">
+                <img src="../assets/images/ziplining-thumb2.jpg" alt="Ziplining view 2">
+            </div>
+            <p>⭐ 4.8 (120 reviews)</p>
+            <h3>INCLUDES:</h3>
+            <ul>
+                <li>Safety Briefing</li>
+                <li>Equipment hires</li>
+                <li>Professional Instructors</li>
+            </ul>
+            <h3>DETAILS:</h3>
+            <p>Experience breathtaking views while zip lining through the forest.</p>
+        </div>
+    </div>
+    <script src="../assets/javascript/script.js"></script>
 </body>
 </html>

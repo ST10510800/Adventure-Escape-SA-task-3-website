@@ -2,48 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Adventure Escape SA - Home</title>
+    <title>Adventure Escape SA</title>
+    <link rel="stylesheet" href="assets/stylesheets/style.css">
 </head>
 <body>
     <header>
-        <img src="assets/images/logo.png" alt="Adventure Escape SA Logo" width="40">
-        <strong>ADVENTURE ESCAPE SA</strong>
+        <div>
+            <img src="assets/images/logo.png" alt="Logo">
+            <strong>ADVENTURE ESCAPE SA</strong>
+        </div>
         <nav>
-            <a href="index.html">HOME</a> |
-            <a href="pages/about.html">ABOUT US</a> |
-            <a href="pages/activities.html">ACTIVITIES</a> |
-            <a href="pages/fees.html">FEE CALCULATOR</a> |
+            <a href="index.html">HOME</a>
+            <a href="pages/about.html">ABOUT US</a>
+            <a href="pages/activities.html">ACTIVITIES</a>
+            <a href="pages/fees.html">FEE CALCULATOR</a>
             <a href="pages/contact.html">CONTACT US</a>
         </nav>
     </header>
-    <hr>
-    <section>
-        <h1>EXPLORE SOUTH AFRICA'S GREAT OUTDOORS</h1>
-        <p>Custom guided tours, hiking, kayaking, & more</p>
-        <img src="assets/images/hero-banner.jpg" alt="South Africa Outdoors Banner" width="100%">
-    </section>
-    <section>
-        <div>
-            <img src="assets/images/ultimate-adventure.jpg" alt="Ultimate Adventure Day" width="200">
+    <div class="hero-container">
+        <img src="assets/images/hero-banner.jpg" alt="South Africa Outdoors" class="hero-img">
+        <div class="hero-overlay-text">
+            <h2>EXPLORE SOUTH AFRICA'S<br>GREAT OUTDOORS</h2>
+            <p>Custom guided tours, hiking, kayaking, & more</p>
+        </div>
+    </div>
+    <section class="card-grid">
+        <div class="card">
+            <img src="assets/images/ultimate-main.jpg" alt="Ultimate Adventure Day">
             <h3>Ultimate Adventure Day</h3>
             <p>R1500 per person</p>
-            <p>Full-day outdoor adventure featuring hiking, ziplining, and kayaking.</p>
-            <a href="pages/activities.html"><button>BOOK NOW</button></a>
+            <p class="card-desc">Full-day outdoor adventure featuring hiking, ziplining, and kayaking.</p>
+            <a href="pages/ultimate.html"><button>BOOK NOW</button></a>
         </div>
-        <div>
-            <img src="assets/images/ziplining.jpg" alt="Ziplining Adventure" width="200">
+        <div class="card">
+            <img src="assets/images/ziplining.jpg" alt="Ziplining Adventure">
             <h3>Ziplining Adventure</h3>
             <p>R750 per person</p>
-            <p>Book more than 3 activities and save up to 15% on your group total.</p>
+            <p class="card-desc">Book more than 3 activities and save up to 15% on your group total.</p>
             <a href="pages/ziplining.html"><button>BOOK NOW</button></a>
         </div>
-        <div>
-            <img src="assets/images/rock-climbing.jpg" alt="Rock Climbing Session" width="200">
+        <div class="card">
+            <img src="assets/images/rock-climbing-main.jpg" alt="Rock Climbing Session">
             <h3>Rock Climbing Session</h3>
             <p>R750 per person</p>
-            <p>Conquer iconic sandstone cliffs with qualified rock climbing guides offering panoramic coastal and mountain views.</p>
-            <a href="pages/activities.html"><button>BOOK NOW</button></a>
+            <p class="card-desc">Conquer iconic sandstone cliffs with qualified rock climbing guides offering panoramic coastal and mountain views.</p>
+            <a href="pages/rock-climbing.html"><button>BOOK NOW</button></a>
         </div>
     </section>
+    <script src="assets/javascript/script.js"></script>
 </body>
 </html>
